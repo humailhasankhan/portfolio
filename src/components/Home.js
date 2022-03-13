@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AnimateComponent from "./AnimateComponent";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Main = () => {
+const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
   setTimeout(() => {
     setShowComponent(true);
@@ -27,4 +27,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;
