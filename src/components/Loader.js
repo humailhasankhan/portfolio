@@ -8,7 +8,7 @@ const Loader = () => {
   const [showComponent, setShowComponent] = useState(true);
   setTimeout(() => {
     setShowComponent(false);
-  }, 8000);
+  }, 7000);
   const animation = () => {
     anime({
       targets: "#logo path",
@@ -35,7 +35,7 @@ const Loader = () => {
             <motion.div
               className="container-svg"
               onLoad={() => animation()}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 0, y: -1000 }}
               transition={{ duration: 1 }}
             >
               <svg

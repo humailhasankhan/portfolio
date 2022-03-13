@@ -1,6 +1,6 @@
 import "./App.css";
 import Loader from "./components/Loader";
-import Main from "./components/Main";
+import Main from "./components/Home";
 
 function App() {
   return (
