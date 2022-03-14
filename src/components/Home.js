@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AnimateComponent from "./AnimateComponent";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Home.css";
+import Hero from "./Hero";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -29,7 +30,7 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 2 }}
             >
-              <h1>Hello how are you</h1>
+              <Hero />
             </motion.div>
           )}
         </AnimatePresence>
