@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100&display=swap");
+
 .hero-image {
   position: relative;
   width: 100%;
@@ -19,8 +21,10 @@
 }
 
 .hero-content-inner {
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-right: 20px;
   color: white;
+  font-family: "Playfair Display", serif;
   font-size: 8px;
   font-weight: 700;
   transition: ease all 0.5s;
@@ -42,41 +46,221 @@
 .hero-button {
   background: linear-gradient(96.95deg, #0ff486 -11.42%, #04f0ff 132.06%);
   border-radius: 5px;
-  font-weight: bolder;
-  margin-top: 10px;
+  font-size: 8px;
+  font-weight: 700;
+  margin-top: 2px;
   padding: 2px 10px;
   color: #000000;
 }
 
+.hero-button:hover {
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-icons {
+  font-size: 72px;
+}
+
+.icon-spacing {
+  margin: 5px 5px;
+}
+
+.media-icons {
+  font-size: 10px;
+}
+
+.github-icon {
+  color: #0ff486;
+}
+
+.linkedin-icon {
+  color: #04fcbafe;
+}
+
+.twitter-icon {
+  color: #04ffe6f5;
+}
+
 @media screen and (min-width: 370px) {
   .hero-content-inner {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 10px;
   }
 
   .description {
     font-size: 8px;
   }
+
+  .hero-button {
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 2px 10px;
+  }
+
+  .icon-spacing {
+    margin: 5px 5px;
+  }
+
+  .media-icons {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .hero-content-inner {
+    margin-top: 60px;
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 8px;
+  }
+
+  .media-icons {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 680px) {
   .hero-content-inner {
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: 16px;
   }
 
   .description {
     font-size: 12px;
   }
+
+  .hero-button {
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 2px 10px;
+  }
+
+  .icon-spacing {
+    margin: 8px 8px;
+  }
+
+  .media-icons {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 980px) {
   .hero-content-inner {
-    margin-top: 160px;
+    margin-top: 140px;
     font-size: 24px;
   }
 
   .description {
     font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 2px 20px;
+  }
+
+  .icon-spacing {
+    margin: 20px 10px;
+  }
+
+  .media-icons {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero-content-inner {
+    margin-top: 180px;
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 5px 30px;
+  }
+
+  .icon-spacing {
+    margin: 25px 15px;
+  }
+
+  .media-icons {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content-inner {
+    margin-top: 250px;
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .hero-button {
+    font-size: 30px;
+    margin-top: 15px;
+    padding: 10px 45px;
+  }
+
+  .icon-spacing {
+    margin: 35px 25px;
+  }
+
+  .media-icons {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content-inner {
+    margin-top: 300px;
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .hero-button {
+    font-size: 45px;
+    margin-top: 25px;
+    padding: 20px 65px;
+  }
+
+  .icon-spacing {
+    margin: 45px 35px;
+  }
+
+  .media-icons {
+    font-size: 45px;
   }
 }
