@@ -3,6 +3,7 @@ import AnimateComponent from "./AnimateComponent";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Home.css";
 import Hero from "./Hero";
+import NavBar from "./Navbar";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -30,6 +31,7 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 2 }}
             >
+              <NavBar />
               <Hero />
             </motion.div>
           )}
