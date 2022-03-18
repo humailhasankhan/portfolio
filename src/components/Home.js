@@ -5,6 +5,7 @@ import "./Home.css";
 import Hero from "./Hero";
 import NavBar from "./Navbar";
 import About from "./About";
+import TechStack from "./TechStack";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -39,6 +40,7 @@ const Home = () => {
           {showComponent && (
             <div>
               <About />
+              <TechStack />
             </div>
           )}
         </AnimatePresence>
