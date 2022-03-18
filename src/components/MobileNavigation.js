@@ -11,6 +11,7 @@ const MobileNavigation = () => {
       className="hamburger"
       size={"40px"}
       color={"white"}
+      transition={{ delay: 0.4 }}
       onClick={() => setOpen(!open)}
     />
   );
@@ -19,6 +20,7 @@ const MobileNavigation = () => {
       className="hamburger"
       size={"40px"}
       color={"white"}
+      transition={{ delay: 0.4 }}
       onClick={() => setOpen(!open)}
     />
   );

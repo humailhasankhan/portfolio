@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Home.css";
 import Hero from "./Hero";
 import NavBar from "./Navbar";
+import About from "./About";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -34,6 +35,11 @@ const Home = () => {
               <NavBar />
               <Hero />
             </motion.div>
+          )}
+          {showComponent && (
+            <div>
+              <About />
+            </div>
           )}
         </AnimatePresence>
       </AnimateComponent>
