@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import profileImage from "../assets/hero/profile.png";
+import profileImage from "../../assets/hero/profile.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const About = () => {

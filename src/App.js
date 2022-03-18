@@ -1,5 +1,5 @@
 import "./App.css";
-import Loader from "./components/Loader";
+import Loader from "./components/Home/Loader";
 import Home from "./components/Home";
 
 function App() {

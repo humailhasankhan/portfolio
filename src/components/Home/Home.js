@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import AnimateComponent from "./AnimateComponent";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Home.css";
-import Hero from "./Hero";
-import NavBar from "./Navbar";
-import About from "./About";
-import TechStack from "./TechStack";
+import Hero from "../Hero";
+import NavBar from "../Navigation/Navbar";
+import About from "../About";
+import TechStack from "../TechStack";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);

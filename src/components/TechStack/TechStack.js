@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./TechStack.css";
-import images from "./CarouselImages";
+import images from "../Navigation/CarouselImages";
 
 const TechStack = () => {
   const [width, setWidth] = useState(0);
@@ -10,7 +10,6 @@ const TechStack = () => {
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
-  console.log(images);
   return (
     <div className="tech-stack">
       <h1>TECH STACK</h1>
