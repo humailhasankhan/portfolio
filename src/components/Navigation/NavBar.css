@@ -50,6 +50,7 @@
   .navbar .mobile-navigation {
     display: flex;
     align-items: center;
+    width: 100vw;
   }
 
   .navbar .mobile-navigation .hamburger {
@@ -59,15 +60,21 @@
     cursor: pointer;
   }
 
+  .navbar nav {
+    border-top: 2px solid #04ffd9;
+    transition: ease-in 4s;
+    transition: ease-out 4s;
+  }
+
   .navbar nav ul li {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     align-items: center;
     align-content: center;
     background: #181818;
     margin: 0;
-    border-top: 2px solid #04ffd9;
+    padding: 40px;
   }
 }

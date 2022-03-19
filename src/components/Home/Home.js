@@ -6,6 +6,7 @@ import Hero from "../Hero";
 import NavBar from "../Navigation/Navbar";
 import About from "../About";
 import TechStack from "../TechStack";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -41,6 +42,7 @@ const Home = () => {
             <div>
               <About />
               <TechStack />
+              <Projects />
             </div>
           )}
         </AnimatePresence>

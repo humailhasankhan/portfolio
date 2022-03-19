@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./TechStack.css";
-import images from "../Navigation/CarouselImages";
+import images from "./CarouselImages";
 
 const TechStack = () => {
   const [width, setWidth] = useState(0);
