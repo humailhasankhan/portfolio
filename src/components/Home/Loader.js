@@ -35,7 +35,7 @@ const Loader = () => {
             <motion.div
               className="container-svg"
               onLoad={() => animation()}
-              exit={{ opacity: 0, y: -1000 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
             >
               <svg

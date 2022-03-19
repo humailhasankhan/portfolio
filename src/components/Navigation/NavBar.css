@@ -16,7 +16,7 @@
   right: 2px;
 }
 
-.navbar nav ul li {
+.navbar nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -50,7 +50,6 @@
   .navbar .mobile-navigation {
     display: flex;
     align-items: center;
-    width: 100vw;
   }
 
   .navbar .mobile-navigation .hamburger {
@@ -58,23 +57,23 @@
     right: 7%;
     top: 15%;
     cursor: pointer;
+    z-index: 7000;
   }
 
-  .navbar nav {
-    border-top: 2px solid #04ffd9;
-    transition: ease-in 4s;
-    transition: ease-out 4s;
-  }
-
-  .navbar nav ul li {
+  .navbar nav ul {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     align-items: center;
     align-content: center;
     background: #181818;
     margin: 0;
     padding: 40px;
+    border-top: 2px solid #04ffd9;
+  }
+
+  .mobile-navigation nav ul li a {
+    text-decoration: none;
   }
 }

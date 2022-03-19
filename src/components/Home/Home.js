@@ -7,14 +7,15 @@ import NavBar from "../Navigation/Navbar";
 import About from "../About";
 import TechStack from "../TechStack";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
   const childVariants = {
-    hidden: { opacity: 0, x: -1000 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      x: 0,
+      transition: { duration: 3 },
     },
   };
   setTimeout(() => {
@@ -43,6 +44,7 @@ const Home = () => {
               <About />
               <TechStack />
               <Projects />
+              <Contact />
             </div>
           )}
         </AnimatePresence>

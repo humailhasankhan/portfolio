@@ -3,6 +3,13 @@ import NavLinks from "./NavLinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import "./NavBar.css";
+import { motion, AnimatePresence } from "framer-motion";
+
+const animations = {
+  initial: { opacity: 0, y: -40 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -1000, transition: { duration: 2 } },
+};
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +18,6 @@ const MobileNavigation = () => {
       className="hamburger"
       size={"40px"}
       color={"white"}
-      transition={{ delay: 0.4 }}
       onClick={() => setOpen(!open)}
     />
   );
@@ -20,7 +26,6 @@ const MobileNavigation = () => {
       className="hamburger"
       size={"40px"}
       color={"white"}
-      transition={{ delay: 0.4 }}
       onClick={() => setOpen(!open)}
     />
   );
@@ -28,10 +33,19 @@ const MobileNavigation = () => {
   const closeMobileMenu = () => setOpen(false);
 
   return (
-    <nav className="mobile-navigation">
-      {open ? closeIcon : hamburgerIcon}
-      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
-    </nav>
+    <AnimatePresence>
+      <motion.nav
+        className="mobile-navigation"
+        variants={animations}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 2 }}
+      >
+        {open ? closeIcon : hamburgerIcon}
+        {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      </motion.nav>
+    </AnimatePresence>
   );
 };
 
