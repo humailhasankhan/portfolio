@@ -11,7 +11,7 @@ const Result = () => {
   );
 };
 
-const Contact = (props) => {
+const Contact = () => {
   const [result, showResult] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();

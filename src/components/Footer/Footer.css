@@ -1,0 +1,68 @@
+.footer {
+  background: linear-gradient(91.01deg, #000000 -26.92%, #10173e 44.22%);
+  color: white;
+  width: 100%;
+  height: 65px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-spacing {
+  padding: 10px 5px;
+}
+
+.media-icons {
+  font-size: 20px;
+}
+
+.envelope-icon {
+  color: #5dfad5;
+}
+
+.envelope-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #5dfad585;
+}
+
+.github-icon {
+  color: #0ff486;
+}
+
+.github-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #0ff4858a;
+}
+
+.linkedin-icon {
+  color: #04fcbafe;
+}
+
+.linkedin-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #04fcba80;
+}
+
+.twitter-icon {
+  color: #04ffe6f5;
+}
+
+.twitter-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: #04ffe679;
+}

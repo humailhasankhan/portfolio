@@ -8,6 +8,7 @@ import About from "../About";
 import TechStack from "../TechStack";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -45,6 +46,7 @@ const Home = () => {
               <TechStack />
               <Projects />
               <Contact />
+              <Footer />
             </div>
           )}
         </AnimatePresence>
