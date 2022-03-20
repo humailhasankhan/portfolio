@@ -1,13 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
+
+const Result = () => {
+  return (
+    <p>
+      Your message has been successfully sent. I will contact you soon. Thank
+      you.
+    </p>
+  );
+};
 
 const Contact = (props) => {
+  const [result, showResult] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "template_b0jd01x", e.target, "s0VjEuQilFlcBury9")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    showResult(true);
+  };
+
+  setTimeout(() => {
+    showResult(false);
+  }, 6000);
+
   return (
     <div className="form-section">
       <div className="form-container">
-        <form action="" onSubmit="">
+        <form action="" onSubmit={sendEmail}>
           <div className="form-area">
-            <h1>LET'S TALK!</h1>
+            <h1>GET IN TOUCH</h1>
             <br />
             <input
               className="input100"
@@ -45,9 +77,10 @@ const Contact = (props) => {
               required
             ></textarea>
             <br />
+            <br />
             <button className="submit-button">SUBMIT</button>
 
-            <div className="row"></div>
+            <div className="row">{result ? <Result /> : null}</div>
           </div>
         </form>
       </div>
