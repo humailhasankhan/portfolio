@@ -1,11 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -23,22 +18,13 @@ const Hero = () => {
           </div>
           <div className="hero-icons">
             <div className="icon-spacing">
-              <FontAwesomeIcon
-                className="media-icons github-icon"
-                icon={faGithub}
-              ></FontAwesomeIcon>
+              <BsGithub className="media-icons github-icon" size={30} />
             </div>
             <div className="icon-spacing">
-              <FontAwesomeIcon
-                className="media-icons linkedin-icon"
-                icon={faLinkedin}
-              ></FontAwesomeIcon>
+              <BsLinkedin className="media-icons linkedin-icon" size={30} />
             </div>
             <div className="icon-spacing ">
-              <FontAwesomeIcon
-                className="media-icons twitter-icon"
-                icon={faTwitter}
-              ></FontAwesomeIcon>
+              <BsTwitter className="media-icons twitter-icon" size={30} />
             </div>
           </div>
         </div>
