@@ -24,6 +24,7 @@
   margin: 1.5vw;
   z-index: 5001;
   background: transparent;
+  list-style-type: none;
 }
 
 .navbar nav ul li a {
@@ -71,9 +72,16 @@
     margin: 0;
     padding: 40px;
     border-top: 2px solid #04ffd9;
-  }
-
-  .mobile-navigation nav ul li a {
+    list-style-type: none;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .navbar {
+    width: 70%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

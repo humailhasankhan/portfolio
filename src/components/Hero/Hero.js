@@ -34,9 +34,9 @@ const Hero = () => {
                 icon={faLinkedin}
               ></FontAwesomeIcon>
             </div>
-            <div className="icon-spacing twitter-icon">
+            <div className="icon-spacing ">
               <FontAwesomeIcon
-                className="media-icons"
+                className="media-icons twitter-icon"
                 icon={faTwitter}
               ></FontAwesomeIcon>
             </div>
