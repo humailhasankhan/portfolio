@@ -5,15 +5,17 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .navbar {
   width: 100%;
   height: 65px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 2px;
+  background: linear-gradient(91.01deg, #000000ba -26.92%, #10173ebd 44.22%);
 }
 
 .navbar nav ul {
@@ -32,6 +34,11 @@
   color: white;
   font-weight: 900;
   font-size: 26px;
+}
+
+.nav-item .active {
+  border-bottom: 5px solid #04ffd9;
+  z-index: 5007;
 }
 
 .navbar a:hover {

@@ -11,6 +11,7 @@ const About = () => {
     <AnimatePresence>
       <motion.div
         className="about"
+        id="about"
         initial={animateFrom}
         animate={animateTo}
         exit={exit}

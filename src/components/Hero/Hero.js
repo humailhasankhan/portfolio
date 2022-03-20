@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="inner-container">
         <div className="hero-inner">
           <h1>

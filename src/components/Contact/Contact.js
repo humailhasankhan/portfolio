@@ -35,7 +35,7 @@ const Contact = () => {
   }, 6000);
 
   return (
-    <div className="form-section">
+    <div className="form-section" id="contact">
       <div className="form-container">
         <form action="" onSubmit={sendEmail}>
           <div className="form-area">

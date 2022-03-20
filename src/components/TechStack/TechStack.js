@@ -11,7 +11,7 @@ const TechStack = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-    <div className="tech-stack">
+    <div className="tech-stack" id="tech-stack">
       <h1>TECH STACK</h1>
       <motion.div ref={carousel} className="carousel">
         <motion.div

@@ -3,15 +3,14 @@ import images from "./ProjectImages";
 import "./Projects.css";
 
 const Projects = () => {
-  console.log(images);
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1>PROJECTS</h1>
       <div className="container">
         <div className="inner-container">
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
-              <div className="item">
+              <div className="item" key={index}>
                 <img src={image} alt="" />
               </div>
             );

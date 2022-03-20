@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 
 const animations = {
@@ -16,59 +17,94 @@ const NavLinks = (props) => {
     <AnimatePresence>
       <ul className="box">
         <motion.li
-          key="box"
+          className="nav-item"
           variants={animations}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 2 }}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <a href="/#hero">HOME</a>
+          <Link
+            to="hero"
+            spy={true}
+            offset={-65}
+            duration={500}
+            onClick={() => props.isMobile && props.closeMobileMenu()}
+          >
+            HOME
+          </Link>
         </motion.li>
         <motion.li
-          key="box"
+          className="nav-item"
           variants={animations}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 2, delay: 0.2 }}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <a href="/#about">ABOUT ME</a>
+          <Link
+            to="about"
+            spy={true}
+            offset={-65}
+            duration={500}
+            onClick={() => props.isMobile && props.closeMobileMenu()}
+          >
+            ABOUT
+          </Link>
         </motion.li>
         <motion.li
-          key="box"
+          className="nav-item"
           variants={animations}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 2, delay: 0.4 }}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <a href="/#skills">SKILLS</a>
+          <Link
+            to="tech-stack"
+            spy={true}
+            offset={-65}
+            duration={500}
+            onClick={() => props.isMobile && props.closeMobileMenu()}
+          >
+            TECH STACK
+          </Link>
         </motion.li>
         <motion.li
-          key="box"
+          className="nav-item"
           variants={animations}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 2, delay: 0.6 }}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <a href="/#projects">PROJECTS</a>
+          <Link
+            to="projects"
+            spy={true}
+            offset={-65}
+            duration={500}
+            onClick={() => props.isMobile && props.closeMobileMenu()}
+          >
+            PROJECTS
+          </Link>
         </motion.li>
         <motion.li
-          key="box"
+          className="nav-item"
           variants={animations}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 2, delay: 0.8 }}
-          onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <a href="/#contact">CONTACT ME</a>
+          <Link
+            to="contact"
+            spy={true}
+            offset={-65}
+            duration={500}
+            onClick={() => props.isMobile && props.closeMobileMenu()}
+          >
+            CONTACT ME
+          </Link>
         </motion.li>
       </ul>
     </AnimatePresence>
