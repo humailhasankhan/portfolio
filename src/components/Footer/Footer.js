@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="info">
-          <h2>© Humail khan 2022</h2>
+          <h4>© Humail khan 2022</h4>
         </div>
         <div className="footer-icons">
           <div className="icon-spacing">

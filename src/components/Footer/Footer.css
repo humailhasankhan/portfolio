@@ -2,7 +2,10 @@
   background: linear-gradient(91.01deg, #000000 -26.92%, #10173e 44.22%);
   color: white;
   width: 100%;
-  height: 65px;
+}
+
+.footer h4 {
+  font-size: 8px;
 }
 
 .footer-container {
@@ -24,7 +27,7 @@
 }
 
 .media-icons {
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .envelope-icon {
@@ -65,4 +68,14 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
   color: #04ffe679;
+}
+
+@media screen and (min-width: 600px) {
+  .footer h4 {
+    font-size: 20px;
+  }
+
+  .media-icons {
+    font-size: 24px;
+  }
 }
