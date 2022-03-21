@@ -55,7 +55,6 @@ const Contact = () => {
               type="text"
               name="phone"
               placeholder="Phone Number"
-              required
             />
             <br />
             <br />

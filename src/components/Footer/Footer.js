@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 import { BsEnvelope, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import mailgo from "mailgo";
 
 const Footer = () => {
+  useEffect(() => {
+    mailgo();
+  }, []);
+
   return (
     <div className="footer">
       <div className="footer-container">
@@ -11,16 +16,42 @@ const Footer = () => {
         </div>
         <div className="footer-icons">
           <div className="icon-spacing">
-            <BsEnvelope className="media-icons envelope-icon" size={30} />
+            <a
+              href="mailto:h.hasan.khan88@gmail.com"
+              aria-label="Link to email"
+            >
+              <BsEnvelope className="media-icons envelope-icon" size={30} />
+            </a>
           </div>
           <div className="icon-spacing">
-            <BsGithub className="media-icons github-icon" size={30} />
+            <a
+              href="https://github.com/humailhasankhan"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github link"
+            >
+              <BsGithub className="media-icons github-icon" size={30} />
+            </a>
           </div>
           <div className="icon-spacing">
-            <BsLinkedin className="media-icons linkedin-icon" size={30} />
+            <a
+              href="https://www.linkedin.com/in/humail-khan-619644217/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github link"
+            >
+              <BsLinkedin className="media-icons linkedin-icon" size={30} />
+            </a>
           </div>
           <div className="icon-spacing ">
-            <BsTwitter className="media-icons twitter-icon" size={30} />
+            <a
+              href="https://twitter.com/HumailHKhan"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github link"
+            >
+              <BsTwitter className="media-icons twitter-icon" size={30} />
+            </a>
           </div>
         </div>
       </div>
