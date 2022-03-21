@@ -23,7 +23,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 1.5vw;
+  margin: 14px;
   z-index: 5001;
   background: transparent;
   list-style-type: none;
@@ -86,8 +86,7 @@
 
 @media screen and (min-width: 1750px) {
   .navbar {
-    width: 70%;
-    height: 100vh;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
