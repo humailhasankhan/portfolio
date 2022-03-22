@@ -4,24 +4,32 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const animations = {
   initial: { opacity: 0, y: -40 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -1000, transition: { duration: 2 } },
+  whileInView: { opacity: 1, y: 0 },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 1.2,
+      ease: [0.83, 0, 0.17, 1],
+    },
+  },
 };
 
 const NavLinks = (props) => {
-  // const animateFrom = { opacity: 0, y: -40 };
-  // const animateTo = { opacity: 1, y: 0 };
-  // const exit = { opacity: 0, y: -1000, transition: { duration: 2 } };
-
   return (
     <AnimatePresence>
-      <ul className="box">
+      <motion.ul
+        className="box"
+        variants={animations}
+        initial={animations.initial}
+        whileInView={animations.whileInView}
+        transition={{ duration: 2, delay: 0.1 }}
+      >
         <motion.li
           className="nav-item"
           variants={animations}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          initial={animations.initial}
+          whileInView={animations.whileInView}
+          exit={animations.exit}
           transition={{ duration: 2 }}
         >
           <Link
@@ -37,9 +45,9 @@ const NavLinks = (props) => {
         <motion.li
           className="nav-item"
           variants={animations}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          initial={animations.initial}
+          whileInView={animations.whileInView}
+          exit={animations.exit}
           transition={{ duration: 2, delay: 0.2 }}
         >
           <Link
@@ -55,9 +63,9 @@ const NavLinks = (props) => {
         <motion.li
           className="nav-item"
           variants={animations}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          initial={animations.initial}
+          whileInView={animations.whileInView}
+          exit={animations.exit}
           transition={{ duration: 2, delay: 0.4 }}
         >
           <Link
@@ -73,9 +81,9 @@ const NavLinks = (props) => {
         <motion.li
           className="nav-item"
           variants={animations}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          initial={animations.initial}
+          whileInView={animations.whileInView}
+          exit={animations.exit}
           transition={{ duration: 2, delay: 0.6 }}
         >
           <Link
@@ -91,9 +99,9 @@ const NavLinks = (props) => {
         <motion.li
           className="nav-item"
           variants={animations}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+          initial={animations.initial}
+          whileInView={animations.whileInView}
+          exit={animations.exit}
           transition={{ duration: 2, delay: 0.8 }}
         >
           <Link
@@ -106,7 +114,7 @@ const NavLinks = (props) => {
             CONTACT ME
           </Link>
         </motion.li>
-      </ul>
+      </motion.ul>
     </AnimatePresence>
   );
 };

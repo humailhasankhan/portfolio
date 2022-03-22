@@ -16,6 +16,7 @@
   left: 0;
   right: 2px;
   background: linear-gradient(91.01deg, #000000ba -26.92%, #10173ebd 44.22%);
+  z-index: 10000;
 }
 
 .navbar nav ul {

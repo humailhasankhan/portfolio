@@ -5,6 +5,11 @@
   font-weight: 900;
 }
 
+.heading {
+  padding: 40px;
+  margin-top: 20px;
+}
+
 .item {
   min-height: 13rem;
   min-width: 13rem;
@@ -23,7 +28,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .projects {
+    padding: 40px;
+  }
   .inner-container {
     flex-direction: row;
+  }
+
+  .item {
+    margin-bottom: 40px;
   }
 }

@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const animations = {
   initial: { opacity: 0, y: -40 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -1000, transition: { duration: 2 } },
+  animate: { opacity: 1, y: 0, transition: { duration: 2 } },
+  close: { opacity: 0, transition: { duration: 2 } },
 };
 
 const MobileNavigation = () => {
@@ -37,9 +37,9 @@ const MobileNavigation = () => {
       <motion.nav
         className="mobile-navigation"
         variants={animations}
-        initial="initial"
-        animate="animate"
-        exit="exit"
+        initial={animations.initial}
+        animate={animations.animate}
+        exit={animations.close}
         transition={{ duration: 2 }}
       >
         {open ? closeIcon : hamburgerIcon}

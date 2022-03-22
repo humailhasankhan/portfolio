@@ -1,6 +1,7 @@
 .tech-stack h1 {
   color: white;
   font-weight: 900;
+  padding: 20px;
 }
 
 .item {
@@ -19,14 +20,20 @@
   display: flex;
 }
 
+#arrow {
+  /* margin-right: 20px; */
+  align-self: center;
+}
+
 .carousel {
   cursor: grab;
   overflow: hidden;
 }
 
 .tech-stack {
-  padding: 20px;
+  padding: 80px 5px;
   background: linear-gradient(80.29deg, #79493c -5.77%, #181e41 80.39%);
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 2000px) {

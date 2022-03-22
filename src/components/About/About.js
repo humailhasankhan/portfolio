@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import profileImage from "../../assets/hero/profile.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const animateFrom = { opacity: 0, y: -40 };
-  const animateTo = { opacity: 1, y: 0 };
-  const exit = { opacity: 0, y: -1000, transition: { delay: 0.4 } };
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        x: 0,
+        transition: { type: "spring", duration: 1, bounce: 0.1 },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+        opacity: 0,
+        transition: { duration: 1 },
+      });
+    }
+    console.log("use effect hook, inView =", inView);
+  }, [inView, animation]);
   return (
-    <AnimatePresence>
-      <motion.div
-        className="about"
-        id="about"
-        initial={animateFrom}
-        animate={animateTo}
-        exit={exit}
-        transition={{ delay: 0.4 }}
-      >
+    <div ref={ref} className="about" id="about">
+      <motion.div className="about-container" animate={animation}>
         <div className="heading-container">
           <h1 className="about-heading">ABOUT ME</h1>
         </div>
@@ -34,7 +47,7 @@ const About = () => {
           <img className="about-image" src={profileImage} alt="profile" />
         </div>
       </motion.div>
-    </AnimatePresence>
+    </div>
   );
 };
 
