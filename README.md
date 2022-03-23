@@ -2,7 +2,7 @@
 
 ## 1. Designs in Figma and Adobe Photoshop:
 
-![Alt portfolio design figma](relative/path/to/portfolio-designs-figma.png?raw=true "Figma designs")
+![portfolio design figma](./src/assets/hero/portfolio-designs-figma.png)
 
 I created my designs in Figma and imported some of text as svg (loading page). I used Adobe Photoshop to import and create my thumbnails for Tech Stack and Projects.
 
