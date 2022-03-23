@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Portfolio Website:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Designs in Figma and Adobe Photoshop:
 
-## Available Scripts
+![Alt portfolio design figma](relative/path/to/portfolio-designs-figma.png?raw=true "Figma designs")
 
-In the project directory, you can run:
+I created my designs in Figma and imported some of text as svg (loading page). I used Adobe Photoshop to import and create my thumbnails for Tech Stack and Projects.
 
-### `npm start`
+## 2. Create app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create react app using npx create-react-app. I did not use any templates to create my portfolio as I wanted to implement my fully personalised designs and I also wanted to enjoy the experience of creating my portfolio myself.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3. Components
 
-### `npm test`
+Created my portfolio one component at a time. I have individual folders for every component. For styling, each component has individual css file within its folder. All images being used in my portfolio are added to an assets folder inside my source folder. First component created was the animated loading page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 4. Animations
 
-### `npm run build`
+For animations, I used Framer Motion and anime.js. The loading page, navbar, hero, about and projects components have various animations being used in them.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 5. Contact me
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The contact me section is working with email.js. It is a plugin which does not require backend settings but an account on emailjs' website. Then the account is linked through service ID and an access token. All relevant setup instructions are available in emailjs documentation. It manages all correspondence from my portfolio to my personal email.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 6. Direct email link in Footer
 
-### `npm run eject`
+I have used Mailgo plugin for direct email options. It has a beautifully designed modal and gives options to choose an email platform of choice and opens the user's individual email client setup. There is an option to just copy my email address and manually paste in in whatever emailing platform the user wants to email me from.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 7. Links to Github, social media and CV
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have also linked my Github, social media platforms such as LinkedIn and Twitter to my portfolio. I also have a link to my updated resumé through google docs.
