@@ -22,7 +22,7 @@ const Projects = () => {
             whileHover={{ scale: 1.2 }}
           >
             <a
-              href="https://caritas-education.netlify.app/"
+              href="http://caritasfinalproject.s3-website.eu-west-2.amazonaws.com"
               target="_blank"
               rel="noopener noreferrer"
             >
